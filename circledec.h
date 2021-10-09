@@ -1,7 +1,7 @@
 #ifndef __CIRCLEDEC_H_
 #define __CIRCLEDEC_H_
 
-#define DEBUG
+//#define DEBUG
 #define CIRCLE_NUM 9
 #define BOARD_ROWS 3
 #define BOARD_COLS 3

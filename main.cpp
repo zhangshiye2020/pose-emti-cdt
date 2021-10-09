@@ -24,6 +24,7 @@ void filterContoursByArea(cv::Mat contourAreas, int classes) {
 }
 
 int main(int argc, char **argv) {
+	clock_t start = clock();
 	string folderpath = "/home/zhangshiye2020/图片/";
 	string filenameNoExtension = "target";
 	string extensionName = ".png";
@@ -33,6 +34,9 @@ int main(int argc, char **argv) {
     pretreatment(mat, pre_src);
     vector<CircleType> circles;
     findCircleByContours(pre_src, circles);
-
+    clock_t end = clock();
+#ifdef DEBUG
+    cout << "Time of total: " << double(end-start)/CLOCKS_PER_SEC << "s" << endl;
+#endif
     return 0;
 }
