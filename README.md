@@ -2,6 +2,7 @@
 CLion到期，不是自己电脑不想续，改用eclipse cdt
 
 ## Windows
+5,6步只针对动态链接库，静态无需配置环境
 **环境&运行：**
 1. TDM-GCC64/MingW64工具链，下载OpenCV源码自行编译，编译过程参考网上相关教程。
 2. Eclipse->project->properties->C/C++ Build->Setting->GCC C++ Compiler->Include->Include Path(-I)设置头文件路径
@@ -19,7 +20,8 @@ CLion到期，不是自己电脑不想续，改用eclipse cdt
 
 ## 头文件(pkg-config --cflags opencv4所得)
 ```c
-
+/usr/include/opencv
+/usr/include/opencv2
 ```
 ## 库(pkg-config --libs opencv4所得)
 ```c
