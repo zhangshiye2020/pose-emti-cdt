@@ -1,6 +1,10 @@
 # pose-emti-cdt
 CLion到期，不是自己电脑不想续，改用eclipse cdt
 
+## Update 10.11
+
+eclipse cdt 太难用了，用回CLion，本仓库废弃
+
 ## Windows
 5,6步只针对动态链接库，静态无需配置环境
 **环境&运行：**
